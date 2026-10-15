@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Happy Birthday Darshana</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌹</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;1,300&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/src/style.css">
+</head><body class="intro">
+<section id="hero">
+  <canvas id="gl"></canvas>
+  <div id="blow"><span>Blow the candles</span></div>
+  <header class="title"><span class="script">Happy Birthday</span><div class="name"><h1>Darshana</h1><span class="num">21</span></div></header>
+  <div id="wish">make a wish</div>
+  <div class="ring"><i></i></div><div class="ring"><i></i></div>
+  <div id="pip"><video id="vid" playsinline muted></video><canvas id="sk" width="320" height="240"></canvas></div>
+  <nav class="dock">
+    <button class="b" id="hand" aria-label="Hand tracking" title="Hand tracking">✋</button>
+    <button class="b" id="mic" aria-label="Microphone, blow the candles" title="Blow the candles">🎤</button>
+    <button class="b" id="relight" aria-label="Relight candles" title="Relight" hidden>🕯️</button>
+    <button class="b" id="music" aria-label="Music" title="Music" hidden>♪</button>
+    <span class="sep"></span>
+    <button class="b s" data-nav="in" aria-label="Zoom in">+</button>
+    <button class="b s" data-nav="out" aria-label="Zoom out">−</button>
+    <button class="b s" data-nav="up" aria-label="Move up">↑</button>
+    <button class="b s" data-nav="down" aria-label="Move down">↓</button>
+  </nav>
+  <a class="down" href="#clock" aria-label="Scroll down">↓</a>
+</section>
+<div id="rest">
+<section id="clock">
+  <time datetime="2005-10-16">16 · 10 · 2005</time>
+  <div class="cheart">
+    <div class="ctile"><div class="clip"><div class="ct tl"><b data-u="y">00</b><span>year</span></div></div></div>
+    <div class="ctile"><div class="clip"><div class="ct tr"><b data-u="h">00</b><span>hour</span></div></div></div>
+    <div class="ctile"><div class="clip"><div class="ct bl"><b data-u="i">00</b><span>minute</span></div></div></div>
+    <div class="ctile"><div class="clip"><div class="ct br"><b data-u="s">00</b><span>second</span></div></div></div>
+    <svg class="outline" viewBox="0 0 1 1" aria-hidden="true"><path d="M.5 .95C.1 .62 .02 .38 .02 .28C.02 .1 .15 .02 .28 .02C.38 .02 .46 .08 .5 .18C.54 .08 .62 .02 .72 .02C.85 .02 .98 .1 .98 .28C.98 .38 .9 .62 .5 .95Z"/></svg>
+  </div>
+</section>
+<section id="love">
+  <div class="heart">
+    <div class="tile" style="--dx:-1;--dy:-1"><div class="clip"><div class="q tl" data-full="/photos/baby.jpg"><img src="/photos/baby.jpg" alt="Darshana" style="object-position:50% 30%" loading="lazy"></div></div></div>
+    <div class="tile" style="--dx:1;--dy:-1"><div class="clip"><div class="q tr" data-full="/photos/kid.jpg"><img src="/photos/kid.jpg" alt="Darshana" style="object-position:55% 35%" loading="lazy"></div></div></div>
+    <div class="tile" style="--dx:-1;--dy:1"><div class="clip"><div class="q bl" data-full="/photos/portrait.jpg"><img src="/photos/portrait.jpg" alt="Darshana" style="object-position:50% 18%" loading="lazy"></div></div></div>
+    <div class="tile" style="--dx:1;--dy:1"><div class="clip"><div class="q br" data-full="/photos/bouquet.jpg"><img src="/photos/bouquet.jpg" alt="Darshana" style="object-position:50% 5%" loading="lazy"></div></div></div>
+    <svg class="outline" viewBox="0 0 1 1" aria-hidden="true"><path d="M.5 .95C.1 .62 .02 .38 .02 .28C.02 .1 .15 .02 .28 .02C.38 .02 .46 .08 .5 .18C.54 .08 .62 .02 .72 .02C.85 .02 .98 .1 .98 .28C.98 .38 .9 .62 .5 .95Z"/></svg>
+  </div>
+</section>
+<footer>🌹</footer>
+</div>
+<div id="bar"></div><canvas id="fx"></canvas>
+<audio id="bgm" loop preload="auto"><source src="/music/song.mp3"><source src="/music/song.m4a"><source src="/music/song.ogg"><source src="/music/song.wav"></audio>
+<div id="lightbox" hidden><img alt=""></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><clipPath id="heartClip" clipPathUnits="objectBoundingBox"><path d="M.5 .95C.1 .62 .02 .38 .02 .28C.02 .1 .15 .02 .28 .02C.38 .02 .46 .08 .5 .18C.54 .08 .62 .02 .72 .02C.85 .02 .98 .1 .98 .28C.98 .38 .9 .62 .5 .95Z"/></clipPath></defs></svg>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands@0.4.1675469240/hands.js" crossorigin="anonymous"></script>
+<script type="module" src="/src/main.js"></script>
+</body></html>
